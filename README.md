@@ -56,7 +56,18 @@ module.exports = function (grunt) {
         options: {
           paths: ['assets/css'],
           plugins: [
-            new (require('less-plugin-replace'))({browsers: ["last 2 versions"]}),
+            new (require('less-plugin-replace'))({
+               patterns: [
+                 {
+                   match: /foo/g,
+                   replacement: 'bar'
+                 },
+                 {
+                   match: 'my/path/before/compile',
+                   replacement: 'my/new/path/after/compile'
+                 }
+               ]
+             })
           ]
         },
         files: {
