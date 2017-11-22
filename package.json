@@ -1,0 +1,22 @@
+{
+  "name": "less-plugin-replace",
+  "version": "1.0.0",
+  "description": "replace plugin for less.js",
+  "author": "Florian Müller",
+  "keywords": [
+    "less plugins",
+    "replace"
+  ],
+  "bugs": {
+    "url": "https://github.com/Suranex/less-plugin-replace/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Suranex/less-plugin-replace.git"
+  },
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
